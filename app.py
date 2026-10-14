@@ -169,7 +169,7 @@ with st.sidebar:
         type="password",
         placeholder="Dán GEMINI_API_KEY vào đây..."
     )
-    model_choice = st.selectbox("🤖 Mô hình:", ["gemini-2.5-flash", "gemini-2.0-flash"])
+    model_choice = st.selectbox("🤖 Mô hình:", ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"])
     use_mock = st.toggle("🧪 Chế độ Mock Mode", value=(not bool(api_key_input)))
 
     st.divider()
